@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package proto.message;
+option java_multiple_files = true;
+//option optimize_for = LITE_RUNTIME;
+
+//0-999 自定义消息
+//登录消息id范围 1000 - 1999
+
+message CSLogin1000 {
+	string account = 1;		//账号
+	string password = 2;	//密码
+}
+
+message SCLogin1001 {
+	int32 status = 1;			//标识码
+	string message = 2;			//错误描述
+}
+
+message HeartBeat1{
+    //心跳信息
+}
